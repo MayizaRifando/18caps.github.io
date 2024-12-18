@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18CAPS - Tienda de Gorras</title>
+    
+    <!-- Vinculando fuente desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Pacifico&family=Raleway&display=swap" rel="stylesheet">
+
+    <style>
+        /* Definir los colores y degradados */
+        :root {
+            --primary-color: #000; /* Negro */
+            --secondary-color: #d32f2f; /* Rojo */
+            --text-color: #fff;
+            --background-color: #333;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Raleway', sans-serif;
+            background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+            color: var(--text-color);
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilo para el encabezado */
+        header {
+            padding: 20px;
+            background-color: var(--primary-color);
+            text-align: center;
+            font-family: 'Anton', sans-serif;
+            color: var(--secondary-color);
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+            text-shadow: 2px 2px var(--secondary-color);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            margin: 0 20px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Contenido principal */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            font-size: 24px;
+            font-family: 'Pacifico', cursive;
+            color: var(--text-color);
+        }
+
+        /* Productos */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .product-card {
+            background-color: var(--primary-color);
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card img:hover {
+            transform: scale(1.1);
+        }
+
+        .product-card h3 {
+            font-family: 'Anton', sans-serif;
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .product-card p {
+            font-size: 18px;
+            color: #ccc;
+        }
+
+        .product-card button {
+            background-color: var(--secondary-color);
+            border: none;
+            color: var(--text-color);
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .product-card button:hover {
+            background-color: #9b1b1b;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>18CAPS</h1>
+        <nav>
+            <a href="#home">Inicio</a>
+            <a href="#products">Gorras</a>
+            <a href="#about">Acerca de</a>
+            <a href="https://instagram.com/tu_perfil" target="_blank">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h2>¡Descubre las mejores gorras!</h2>
+        <p>Encuentra el estilo perfecto para tu look diario.</p>
+    </section>
+
+    <section class="products" id="products">
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200" alt="Gorra 1">
+            <h3>Gorra Roja</h3>
+            <p>$25.99</p>
+            <button>Añadir al carrito</button>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200" alt="Gorra 2">
+            <h3>Gorra Negra</h3>
+            <p>$22.99</p>
+            <button>Añadir al carrito</button>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200" alt="Gorra 3">
+            <h3>Gorra Deportiva</h3>
+            <p>$30.99</p>
+            <button>Añadir al carrito</button>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200" alt="Gorra 4">
+            <h3>Gorra Street</h3>
+            <p>$28.99</p>
+            <button>Añadir al carrito</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 18CAPS. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
